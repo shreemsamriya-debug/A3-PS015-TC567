@@ -1,0 +1,156 @@
+{
+    "timestamp": "2026-11-14T11:06:49.187392+00:00",
+    "operating_system": "Windows",
+    "local_network": {
+        "gateway": "fe80::2a25:5fff:fe99:ecc0%14",
+        "status": "success",
+        "average_latency_ms": 1.25,
+        "minimum_latency_ms": 1.0,
+        "maximum_latency_ms": 2.0,
+        "jitter_ms": 0.4330127018922193,
+        "packet_loss_percent": 0.0,
+        "successful_pings": 4,
+        "total_pings": 4
+    },
+    "network_quality": {
+        "status": "success",
+        "average_latency_ms": 8.2,
+        "minimum_latency_ms": 5.0,
+        "maximum_latency_ms": 17.0,
+        "jitter_ms": 3.249615361854384,
+        "packet_loss_percent": 0.0,
+        "successful_pings": 10,
+        "total_pings": 10
+    },
+    "dns_test": {
+        "status": "success",
+        "hostname": "example.com",
+        "resolution_time_ms": 11.93,
+        "addresses": [
+            "104.20.23.154",
+            "172.66.147.243",
+            "2606:4700:10::6814:179a",
+            "2606:4700:10::ac42:93f3"
+        ]
+    },
+    "internet_speed": {
+        "status": "success",
+        "provider": "Ookla Speedtest CLI",
+        "cli_version": "1.2.0.84",
+        "timestamp": "2026-11-14T11:07:24Z",
+        "download_mbps": 210.54,
+        "upload_mbps": 201.01,
+        "latency_ms": 4.1,
+        "jitter_ms": 2.068,
+        "packet_loss_percent": 0.0,
+        "download_latency": {
+            "iqm": 10.494,
+            "low": 4.932,
+            "high": 22.648,
+            "jitter": 3.074
+        },
+        "upload_latency": {
+            "iqm": 4.769,
+            "low": 2.782,
+            "high": 19.676,
+            "jitter": 1.717
+        },
+        "isp": "Tata Play Fiber",
+        "server": {
+            "id": 36279,
+            "name": "teleGlobal Communications Pvt Ltd",
+            "location": "Pune",
+            "country": "India",
+            "host": "speedtest.teleglobal.in"
+        },
+        "interface": {
+            "name": "",
+            "is_vpn": false
+        },
+        "result_url": "https://www.speedtest.net/result/c/7ed6e377-b1aa-424a-84a9-b9fd2b9cef8f"
+    },
+    "diagnosis": [
+        "External network latency is within a good range.",
+        "Network jitter is low.",
+        "No packet loss was detected in the external ping test.",
+        "The default gateway responded to ping requests.",
+        "DNS resolution completed successfully.",
+        "Measured download speed: 210.54 Mbps.",
+        "Measured upload speed: 201.01 Mbps.",
+        "Current network measurements are within the learned historical behaviour range.",
+        "Fingerprinting compares current measurements with previous measurements from the same identified operating-system and gateway combination.",
+        "An anomaly indicates a deviation from historical behaviour; it does not independently establish the exact root cause."
+    ],
+    "possible_causes": [
+        "No specific network fault was established from the available measurements."
+    ],
+    "recommendations": [
+        "No immediate corrective action is indicated. Current network measurements are within the learned historical baseline. Continue periodic monitoring to identify future changes."
+    ],
+    "network_fingerprint": {
+        "status": "within_baseline",
+        "network_key": "Windows|fe80::2a25:5fff:fe99:ecc0%14",
+        "gateway": "fe80::2a25:5fff:fe99:ecc0%14",
+        "storage": "SQLite",
+        "database_path": "C:\\AIORI-3\\NetSense_AI\\database\\netsense.db",
+        "baseline_ready": true,
+        "baseline_samples": 5,
+        "historical_samples_used": 5,
+        "minimum_samples_required": 5,
+        "metrics": {
+            "latency_ms": 8.2,
+            "jitter_ms": 3.249615361854384,
+            "packet_loss_percent": 0.0,
+            "download_mbps": 210.54,
+            "upload_mbps": 201.01
+        },
+        "baselines": {
+            "latency_ms": {
+                "count": 5,
+                "median": 8.0,
+                "mad": 0.6
+            },
+            "jitter_ms": {
+                "count": 5,
+                "median": 1.4866,
+                "mad": 0.3731
+            },
+            "packet_loss_percent": {
+                "count": 5,
+                "median": 0.0,
+                "mad": 0.0
+            },
+            "download_mbps": {
+                "count": 5,
+                "median": 208.54,
+                "mad": 1.15
+            },
+            "upload_mbps": {
+                "count": 5,
+                "median": 204.34,
+                "mad": 4.09
+            }
+        },
+        "anomalies": [],
+        "anomaly_count": 0,
+        "message": "Current measurements are within the learned baseline."
+    },
+    "confidence_assessment": {
+        "score": 100,
+        "level": "high",
+        "completed_checks": 7,
+        "total_checks": 7,
+        "coverage_percent": 100.0,
+        "baseline_ready": true,
+        "explanation": "This score describes the coverage of available diagnostic evidence and historical baseline data. It is not a probability that the identified root cause is correct.",
+        "checks": {
+            "gateway_test": true,
+            "latency_test": true,
+            "jitter_test": true,
+            "packet_loss_test": true,
+            "dns_test": true,
+            "download_test": true,
+            "upload_test": true
+        }
+    }
+}
