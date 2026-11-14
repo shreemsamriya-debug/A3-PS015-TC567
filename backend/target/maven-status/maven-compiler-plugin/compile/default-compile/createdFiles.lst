@@ -1,0 +1,4 @@
+NetSenseAI\DiagnosticController.class
+NetSenseAI\HealthController.class
+NetSenseAI\BackendApplication.class
+NetSenseAI\DiagnosticRepository.class
